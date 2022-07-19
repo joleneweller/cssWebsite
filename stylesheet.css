@@ -1,0 +1,226 @@
+
+
+/* ----------------- Font size styles------------------- */
+html {
+    font-size: 22px;
+}
+
+/* ----------------- Background styles------------------- */
+body {
+    padding: 1rem;
+    background-color: #734A45;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    background-image: url(images/background.jpg);
+}
+
+/* ----------------- Header styles------------------- */
+.header {
+    top: 0;
+    overflow: hidden;
+    background-color: #46f3f3;
+    margin: 40px 120px;
+    padding: 30px 20px;
+    text-align: center;
+    /* colour of footer text */
+    padding: 12px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: fantasy;
+}
+
+/* ------------ Link style for a header button/link */
+.header a {
+    color: #232325;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-family: fantasy;
+}
+
+/* ------------ Header Title */
+.header a.name {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: fantasy;
+}
+
+
+/* ----------------- Individual Single large Card/Panel Style------------------- */
+.cardLarge {
+    background-color: #020202;
+    color: #e0e1dd;
+    padding: 1rem;
+    height: 4rem;
+    overflow: hidden;
+    height: inherit;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+}
+
+/* ----------------- Title Card/Panel YELLOW ------------------- */
+.cardYellow {
+    background-color: #46f3f3;
+    color: #232325;
+    padding: 1rem;
+    height: 4rem;
+    overflow: hidden;
+    height: inherit;
+    font-family: fantasy;
+    /* ----------------- Div card streaches/shrinks to div content------------------- */
+    justify-items: center;
+    align-items: center;
+    display: grid;
+}
+
+
+/* ----------------- Main Div Container for Card & cardYellow & cardLarge ------------------- */
+
+.cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* -----To auto streach the card divs to size --- */
+}
+
+/* ----------------- Main Div Container for Single Full Card------------------- */
+.cardContain {
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-gap: 1rem;
+    display: grid;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+
+/* ----------------- Footer styles------------------- */
+
+.footer {
+
+    bottom: 0;
+    overflow: hidden;
+    background-color: #46f3f3;
+    padding: 20px 10px;
+    text-align: center;
+    /* colour of footer text */
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* ----------------- Footer Links/Button styles------------------- */
+.footer a {
+
+    color: #AB8268;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.footer a.fname {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ----------------- Link mouse hover and active ------------------- */
+.footer a:hover {
+    background-color:#ca3f9e;
+    color: #CCF244;
+}
+
+.footer a.active {
+    background-color: #ca3f9e;
+    color: #f2e9e4;
+}
+
+/* ----------------- image styles------------------- */
+
+
+
+.image img {
+
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border: solid;
+    border-width: 4px;
+    border-radius: 10px;
+    border-color: #0D0D0D;
+}
+
+/* ----------------- FONT h1, p font colour and font size ------------------- */
+h1 {
+    color: #e0e1dd;
+    font-family: Montserrat;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #232325;
+    font-family: fantasy;
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+
+p {
+    color: #e0e1dd;
+    font-family: Montserrat;
+    font-size: 20px;
+    background-color: #020202;
+}
+
+ul {
+    color: #e0e1dd;
+    margin: 0 auto;
+    font-family: Montserrat;
+    font-size: 14px;
+    list-style: none;
+    position: relative;
+}
+
+a {
+    color: #CCF244;
+    text-decoration: none;
+}
+
+
+/* -----------The Bullet Point style------------ */
+li::before {
+
+    content: "☆ ";
+    position: static;
+    color: #ca3f9e;
+    font-size: 24px;
+    left: .8em;
+}
+
+/* ----------------- Adjust Divs for mobile ------------------- */
+
+/* Change this to view coloumn number */
+@media (min-width: 600px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media (min-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+}
